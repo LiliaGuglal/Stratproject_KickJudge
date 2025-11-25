@@ -68,6 +68,7 @@ export default function KickAIJudgeLanding() {
         pricing: "Тарифи",
         about: "Про нас",
         contact: "Контакти",
+        chat: "AI Чат",
         tryFree: "Спробувати безкоштовно",
       },
       hero: {
@@ -257,6 +258,7 @@ export default function KickAIJudgeLanding() {
         pricing: "Pricing",
         about: "About",
         contact: "Contact",
+        chat: "AI Chat",
         tryFree: "Try for free",
       },
       hero: {
@@ -476,6 +478,9 @@ export default function KickAIJudgeLanding() {
               <a href="#pricing" className="text-zinc-400 hover:text-white transition-colors">
                 {t.nav.pricing}
               </a>
+              <Link href="/chat" className="text-zinc-400 hover:text-white transition-colors">
+                {t.nav.chat}
+              </Link>
               <a href="#about" className="text-zinc-400 hover:text-white transition-colors">
                 {t.nav.about}
               </a>
@@ -547,6 +552,13 @@ export default function KickAIJudgeLanding() {
               >
                 {t.nav.pricing}
               </a>
+              <Link
+                href="/chat"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-zinc-400 hover:text-white transition-colors py-2"
+              >
+                {t.nav.chat}
+              </Link>
               <a
                 href="#about"
                 onClick={() => setMobileMenuOpen(false)}

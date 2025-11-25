@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { FloatingChatButton } from "@/components/rules-qa/floating-chat-button"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="uk" className="dark">
       <body className={`font-sans antialiased`}>
         {children}
+        <FloatingChatButton />
         <Analytics />
       </body>
     </html>
